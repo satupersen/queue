@@ -1,0 +1,50 @@
+{
+    "name": "satupersen/queue",
+    "description": "The Illuminate Queue package.",
+    "license": "MIT",
+    "homepage": "https://laravel.com",
+    "support": {
+        "issues": "https://github.com/laravel/framework/issues",
+        "source": "https://github.com/laravel/framework"
+    },
+    "authors": [
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "ext-json": "*",
+        "satupersen/console": "^1.0",
+        "satupersen/container": "^1.0",
+        "satupersen/contracts": "^1.0",
+        "satupersen/database": "^1.0",
+        "satupersen/filesystem": "^1.0",
+        "satupersen/pipeline": "^1.0",
+        "satupersen/support": "^1.0",
+        "opis/closure": "^3.1",
+        "symfony/process": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Satupersen\\Queue\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "suggest": {
+        "ext-pcntl": "Required to use all features of the queue worker.",
+        "ext-posix": "Required to use all features of the queue worker.",
+        "aws/aws-sdk-php": "Required to use the SQS queue driver and DynamoDb failed job storage (^3.0).",
+        "satupersen/redis": "Required to use the Redis queue driver (^1.0).",
+        "pda/pheanstalk": "Required to use the Beanstalk queue driver (^4.0)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
